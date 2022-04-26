@@ -1,0 +1,11 @@
+actions:
+  back: Retour
+  logout: Se déconnecter
+  sign-in: Se connecter
+sentences:
+  'connected-user:': 'Utilisateur conecté :'
+  not-found: Page non trouvée
+words:
+  login: Connexion
+  password: Mot de passe
+  username: Nom d'utilisateur

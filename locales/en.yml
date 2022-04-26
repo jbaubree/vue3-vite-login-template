@@ -1,0 +1,11 @@
+actions:
+  back: Back
+  logout: Logout
+  sign-in: Sign in
+sentences:
+  'connected-user:': 'Connected user:'
+  not-found: Not found
+words:
+  login: Login
+  password: Password
+  username: Username

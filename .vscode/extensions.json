@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "antfu.unocss",
+    "dbaeumer.vscode-eslint",
+    "johnsoncodehk.volar",
+    "lokalise.i18n-ally"
+  ]
+}
