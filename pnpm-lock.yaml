@@ -23,7 +23,7 @@ specifiers:
   unplugin-vue-components: 0.19.3
   vite: 2.9.6
   vite-plugin-pages: 0.23.0
-  vite-plugin-pwa: 0.11.13
+  vite-plugin-pwa: 0.12.0
   vite-plugin-vue-layouts: 0.6.0
   vite-ssg: 0.19.2
   vite-ssg-sitemap: 0.2.4
@@ -60,7 +60,7 @@ devDependencies:
   unplugin-vue-components: 0.19.3_vite@2.9.6+vue@3.2.33
   vite: 2.9.6_sass@1.51.0
   vite-plugin-pages: 0.23.0_vite@2.9.6
-  vite-plugin-pwa: 0.11.13_vite@2.9.6
+  vite-plugin-pwa: 0.12.0_vite@2.9.6
   vite-plugin-vue-layouts: 0.6.0_46a694bae06abddfad7399bb26d64ccb
   vite-ssg: 0.19.2_da5f6ad44a2e9cbb4ec7275ea2bcfcdf
   vite-ssg-sitemap: 0.2.4
@@ -4757,6 +4757,11 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /pretty-bytes/6.0.0:
+    resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
+    engines: {node: ^14.13.1 || >=16.0.0}
+    dev: true
+
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -5570,14 +5575,14 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-pwa/0.11.13_vite@2.9.6:
-    resolution: {integrity: sha512-Ssj14m3TRVLfkFEAWSMcFE2d1cSdEZyrVTzfY2lSL+umHYvcIFHVDAY143sygtBCb44OPczsAOmWwBTxwOvh7g==}
+  /vite-plugin-pwa/0.12.0_vite@2.9.6:
+    resolution: {integrity: sha512-KYD+cnS5ExLF3T28NkfzBLZ53ehHlp+qMhHGFNh0zlVGpFHrJkL2v9wd4AMi7ZkBTffgeNatIFiv8rhCsMSxBQ==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
       debug: 4.3.4
       fast-glob: 3.2.11
-      pretty-bytes: 5.6.0
+      pretty-bytes: 6.0.0
       rollup: 2.70.2
       vite: 2.9.6_sass@1.51.0
       workbox-build: 6.5.3
