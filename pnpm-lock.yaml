@@ -10,7 +10,7 @@ specifiers:
   '@vueuse/core': 8.3.1
   '@vueuse/head': 0.7.6
   '@vueuse/integrations': 8.3.1
-  axios: 0.26.1
+  axios: 0.27.1
   eslint: 8.14.0
   lodash: 4.17.21
   nprogress: 0.2.0
@@ -35,7 +35,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 8.3.1_vue@3.2.33
   '@vueuse/head': 0.7.6_vue@3.2.33
-  '@vueuse/integrations': 8.3.1_deda4b00ac8a40f4d1264f96789e0783
+  '@vueuse/integrations': 8.3.1_3788657231c5f7305062f3936fe20342
   nprogress: 0.2.0
   pinia: 2.0.13_typescript@4.6.3+vue@3.2.33
   vue: 3.2.33
@@ -49,7 +49,7 @@ devDependencies:
   '@types/lodash': 4.14.182
   '@types/nprogress': 0.2.0
   '@vitejs/plugin-vue': 2.3.1_vite@2.9.6+vue@3.2.33
-  axios: 0.26.1
+  axios: 0.27.1
   eslint: 8.14.0
   lodash: 4.17.21
   pnpm: 6.32.10
@@ -2043,7 +2043,7 @@ packages:
       vue: 3.2.33
     dev: false
 
-  /@vueuse/integrations/8.3.1_deda4b00ac8a40f4d1264f96789e0783:
+  /@vueuse/integrations/8.3.1_3788657231c5f7305062f3936fe20342:
     resolution: {integrity: sha512-E9AK+DsUM2m5jxdzAAyakjbM3dZcmalVMTQKlRkP4wMIreJnp504ekaUS7+LFvs12qOSxcwXwsTQD9PYd5ZRVA==}
     peerDependencies:
       axios: '*'
@@ -2075,7 +2075,7 @@ packages:
     dependencies:
       '@vueuse/core': 8.3.1_vue@3.2.33
       '@vueuse/shared': 8.3.1_vue@3.2.33
-      axios: 0.26.1
+      axios: 0.27.1
       nprogress: 0.2.0
       vue-demi: 0.12.5_vue@3.2.33
     transitivePeerDependencies:
@@ -2262,6 +2262,15 @@ packages:
     resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
     dependencies:
       follow-redirects: 1.14.9
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /axios/0.27.1:
+    resolution: {integrity: sha512-ePNMai55xo5GsXajb/k756AqZqpqeDaGwGcdvbZLSSELbbYwsIn2jNmGfUPEwd8j/yu4OoMstLLIVa4t0MneEA==}
+    dependencies:
+      follow-redirects: 1.14.9
+      form-data: 4.0.0
     transitivePeerDependencies:
       - debug
     dev: true
