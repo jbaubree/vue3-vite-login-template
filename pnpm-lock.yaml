@@ -15,7 +15,7 @@ specifiers:
   lodash: 4.17.21
   nprogress: 0.2.0
   pinia: 2.0.13
-  pnpm: 6.32.10
+  pnpm: 6.32.11
   sass: 1.51.0
   typescript: 4.6.3
   unocss: 0.31.17
@@ -52,7 +52,7 @@ devDependencies:
   axios: 0.27.2
   eslint: 8.14.0
   lodash: 4.17.21
-  pnpm: 6.32.10
+  pnpm: 6.32.11
   sass: 1.51.0
   typescript: 4.6.3
   unocss: 0.31.17_vite@2.9.6
@@ -4723,8 +4723,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/6.32.10:
-    resolution: {integrity: sha512-1+TscklAKWvI6iNY1cVfRsHY9h5dgarHF3zYfg+yVyaS270uvKlQKXBnaX6T6YGXNGWNXqWhDUS9EIzKCDs7Dw==}
+  /pnpm/6.32.11:
+    resolution: {integrity: sha512-KIb3ImAEGl03aJNy0pai7J0mWn52GJwRrUllxUZwibhLdUoeOuDjXhNSgRxxW9BH2gR91b3UadxzdAvhehmM8w==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true
