@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@6.32.11",
+  "packageManager": "pnpm@7.0.0",
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333",
@@ -28,7 +28,7 @@
     "axios": "0.27.2",
     "eslint": "8.14.0",
     "lodash": "4.17.21",
-    "pnpm": "6.32.11",
+    "pnpm": "7.0.0",
     "sass": "1.51.0",
     "typescript": "4.6.4",
     "unocss": "0.32.8",
