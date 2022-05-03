@@ -8,13 +8,11 @@
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit"
   },
-  "peerDependencies": {
-    "@intlify/vite-plugin-vue-i18n": "3.4.0"
-  },
   "dependencies": {
     "@vueuse/core": "8.3.1",
     "@vueuse/head": "0.7.6",
     "@vueuse/integrations": "8.3.1",
+    "change-case": "4.1.2",
     "nprogress": "0.2.0",
     "pinia": "2.0.13",
     "vue": "3.2.33",
