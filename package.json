@@ -8,6 +8,9 @@
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit"
   },
+  "peerDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "3.4.0"
+  },
   "dependencies": {
     "@vueuse/core": "8.3.1",
     "@vueuse/head": "0.7.6",
