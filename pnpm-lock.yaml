@@ -22,6 +22,7 @@ specifiers:
   unplugin-auto-import: 0.7.1
   unplugin-vue-components: 0.19.3
   vite: 2.9.7
+  vite-auto-import-resolvers: ^2.3.0
   vite-plugin-pages: 0.23.0
   vite-plugin-pwa: 0.12.0
   vite-plugin-vue-layouts: 0.6.0
@@ -59,6 +60,7 @@ devDependencies:
   unplugin-auto-import: 0.7.1_6qfftb5sbvokbj5gkjcfwcaoo4
   unplugin-vue-components: 0.19.3_vite@2.9.7+vue@3.2.33
   vite: 2.9.7_sass@1.51.0
+  vite-auto-import-resolvers: 2.3.0_577c66tz53nvecvxpazhq5otnm
   vite-plugin-pages: 0.23.0_vite@2.9.7
   vite-plugin-pwa: 0.12.0_vite@2.9.7
   vite-plugin-vue-layouts: 0.6.0_cy27blvoe2cwdzwso5wue736a4
@@ -2413,6 +2415,11 @@ packages:
 
   /caniuse-lite/1.0.30001335:
     resolution: {integrity: sha512-ddP1Tgm7z2iIxu6QTtbZUv6HJxSaV/PZeSrWFZtbY4JZ69tOeNhBCl3HyRQgeNZKE5AOn1kpV7fhljigy0Ty3w==}
+    dev: true
+
+  /case/1.6.3:
+    resolution: {integrity: sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==}
+    engines: {node: '>= 0.8.0'}
     dev: true
 
   /chalk/2.4.2:
@@ -5637,6 +5644,24 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vite-auto-import-resolvers/2.3.0_577c66tz53nvecvxpazhq5otnm:
+    resolution: {integrity: sha512-2/DloHsurAmli/+yzaN3qjwX3f6jnUs1pmBhk2ChFWWuo5haiuNrGZLIG0U3xNPy4610bY6YLWl7pA+dWGWg6Q==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      '@types/node': '>=17.0.23'
+      unplugin-auto-import: '>=0.6.9'
+      vite: '>=2.9.1'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+    dependencies:
+      case: 1.6.3
+      fast-glob: 3.2.11
+      local-pkg: 0.4.1
+      unplugin-auto-import: 0.7.1_6qfftb5sbvokbj5gkjcfwcaoo4
+      vite: 2.9.7_sass@1.51.0
     dev: true
 
   /vite-plugin-pages/0.23.0_vite@2.9.7:

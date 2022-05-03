@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useUser } from '~/composables'
-import { useUserStore } from '~/stores/userStore'
-
 const { logout } = useUserStore()
 const { user } = useUser()
 const { t } = useI18n()

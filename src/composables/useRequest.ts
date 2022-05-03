@@ -1,5 +1,4 @@
-import type { UseAxiosOptions } from '@vueuse/integrations/useAxios'
-import { useAxios } from '@vueuse/integrations/useAxios'
+import { type UseAxiosOptions, useAxios } from '@vueuse/integrations/useAxios'
 import type { AxiosRequestConfig, Method } from 'axios'
 import _ from 'lodash'
 
@@ -9,10 +8,6 @@ const API_CONFIG: AxiosRequestConfig = {
 
 const USE_AXIOS_OPTIONS: UseAxiosOptions = {
   immediate: false,
-}
-
-export function useRequest(url: string, data: any = undefined, method: Method = 'GET', useAxiosOptions: UseAxiosOptions = USE_AXIOS_OPTIONS) {
-  return request(url, { data, method }, useAxiosOptions)
 }
 
 function request(url: string, options: AxiosRequestConfig = {}, useAxiosOptions: UseAxiosOptions) {
@@ -27,4 +22,8 @@ function request(url: string, options: AxiosRequestConfig = {}, useAxiosOptions:
     execute,
     abort,
   }
+}
+
+export default function useRequest(url: string, data: any = undefined, method: Method = 'GET', useAxiosOptions: UseAxiosOptions = USE_AXIOS_OPTIONS) {
+  return request(url, { data, method }, useAxiosOptions)
 }

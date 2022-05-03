@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useDarkMode } from '~/composables'
-
 const { toggleDark } = useDarkMode()
 const { availableLocales, locale } = useI18n()
 

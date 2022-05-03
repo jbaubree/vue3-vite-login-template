@@ -6,6 +6,7 @@ import generateSitemap from 'vite-ssg-sitemap'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { DirResolverHelper, dirResolver } from 'vite-auto-import-resolvers'
 import { VitePWA } from 'vite-plugin-pwa'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Unocss from 'unocss/vite'
@@ -20,6 +21,7 @@ export default defineConfig({
     Vue({ reactivityTransform: true }),
     Pages(),
     Layouts(),
+    DirResolverHelper(),
     AutoImport({
       imports: [
         'vue',
@@ -30,6 +32,13 @@ export default defineConfig({
         '@vueuse/head',
       ],
       dts: 'src/auto-imports.d.ts',
+      resolvers: [
+        dirResolver(),
+        dirResolver({
+          target: 'stores',
+          suffix: 'Store',
+        }),
+      ],
     }),
     Components({
       extensions: ['vue'],

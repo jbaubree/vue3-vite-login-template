@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { useUser } from '~/composables'
-import { useUserStore } from '~/stores/userStore'
 const { t } = useI18n()
 const { isConnected, error } = useUser()
 const router = useRouter()
-const user = useUserStore()
+const userStore = useUserStore()
 
 const username = ref('')
 const password = ref('')
@@ -36,7 +34,7 @@ watch(isConnected, (value) => {
 
     <button
       class="btn text-sm"
-      @click="user.login({ username, password })"
+      @click="userStore.login({ username, password })"
     >
       {{ t('actions.sign-in') }}
     </button>

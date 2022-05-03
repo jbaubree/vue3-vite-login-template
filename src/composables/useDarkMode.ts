@@ -1,6 +1,6 @@
 const isDark = useDark()
 
-export function useDarkMode() {
+export default function useDarkMode() {
   const toggleDark = useToggle(isDark)
 
   return {

@@ -1,5 +1,4 @@
 import type { UserModule } from '~/types'
-import { useUser } from '~/composables'
 
 export const install: UserModule = ({ isClient, router }) => {
   if (!isClient)

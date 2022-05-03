@@ -1,8 +1,7 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { useRequest } from '~/composables'
 import type { User, UserCredentials } from '~/types'
 
-export const useUserStore = defineStore('user', {
+const useUserStore = defineStore('user', {
   state: () => ({
     user: undefined as User | undefined,
     error: undefined as unknown,
@@ -41,3 +40,5 @@ export const useUserStore = defineStore('user', {
 
 if (import.meta.hot)
   import.meta.hot.accept(acceptHMRUpdate(useUserStore, import.meta.hot))
+
+export default useUserStore

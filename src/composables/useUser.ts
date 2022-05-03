@@ -1,6 +1,4 @@
-import { useUserStore } from '~/stores/userStore'
-
-export function useUser() {
+export default function useUser() {
   const userStore = useUserStore()
 
   const isConnected = computed(() => !!userStore.getUser?.token)
