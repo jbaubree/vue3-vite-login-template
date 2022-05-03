@@ -21,7 +21,7 @@ jobs:
           cache: pnpm
 
       - name: Install
-        run: pnpm install --strict-peer-dependencies=false
+        run: pnpm install
 
       - name: Lint
         run: pnpm run lint
