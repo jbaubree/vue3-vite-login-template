@@ -26,7 +26,7 @@ specifiers:
   vite-plugin-pages: 0.23.0
   vite-plugin-pwa: 0.12.0
   vite-plugin-vue-layouts: 0.6.0
-  vite-ssg: 0.19.2
+  vite-ssg: 0.20.0
   vite-ssg-sitemap: 0.2.6
   vue: 3.2.33
   vue-i18n: 9.1.10
@@ -64,7 +64,7 @@ devDependencies:
   vite-plugin-pages: 0.23.0_vite@2.9.7
   vite-plugin-pwa: 0.12.0_vite@2.9.7
   vite-plugin-vue-layouts: 0.6.0_cy27blvoe2cwdzwso5wue736a4
-  vite-ssg: 0.19.2_yvmnxx6ox7257wlnoh442hup3i
+  vite-ssg: 0.20.0_yvmnxx6ox7257wlnoh442hup3i
   vite-ssg-sitemap: 0.2.6
   vue-tsc: 0.34.11_typescript@4.6.4
 
@@ -3469,6 +3469,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /eventemitter3/4.0.7:
+    resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
+    dev: true
+
   /execa/5.1.1:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
@@ -4686,6 +4690,11 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
+  /p-finally/1.0.0:
+    resolution: {integrity: sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=}
+    engines: {node: '>=4'}
+    dev: true
+
   /p-limit/1.3.0:
     resolution: {integrity: sha512-vvcXsLAJ9Dr5rQOPk7toZQZJApBl2K4J6dANSsEuh6QI41JYcsS/qhTGa9ErIUUgK3WNQoJYvylxvjqmiqEA9Q==}
     engines: {node: '>=4'}
@@ -4726,6 +4735,21 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-limit: 3.1.0
+    dev: true
+
+  /p-queue/6.6.2:
+    resolution: {integrity: sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==}
+    engines: {node: '>=8'}
+    dependencies:
+      eventemitter3: 4.0.7
+      p-timeout: 3.2.0
+    dev: true
+
+  /p-timeout/3.2.0:
+    resolution: {integrity: sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==}
+    engines: {node: '>=8'}
+    dependencies:
+      p-finally: 1.0.0
     dev: true
 
   /p-try/1.0.0:
@@ -5790,8 +5814,8 @@ packages:
     resolution: {integrity: sha512-rjb+aXzaw9gb9mqoWaU1mVhwGg3SZKMR8ULraGFSLK9vaeQv52/qHFNmBAZvUiBUmgMQ4RGP2fGomTC+SwknFg==}
     dev: true
 
-  /vite-ssg/0.19.2_yvmnxx6ox7257wlnoh442hup3i:
-    resolution: {integrity: sha512-r9UJJ4OTMyu9f4nNe12PMVhVkeXYp1rUKbIl6zIOz5QDYEDgFcq8hZGUMMIAcyHhB4pH5ImmjZd1hJ2fO6hOmg==}
+  /vite-ssg/0.20.0_yvmnxx6ox7257wlnoh442hup3i:
+    resolution: {integrity: sha512-F6B6au8V0aOc9vQ/z875n8AjmGa8vkZGZnuSAidMeJzgEnVYJhIzLL5gUKU336bM9C1GCDJwz5JXmY6YPd3ukg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -5810,6 +5834,7 @@ packages:
       html5parser: 2.0.2
       jsdom: 19.0.0
       kolorist: 1.5.1
+      p-queue: 6.6.2
       prettier: 2.6.2
       vite: 2.9.7_sass@1.51.0
       vue: 3.2.33
