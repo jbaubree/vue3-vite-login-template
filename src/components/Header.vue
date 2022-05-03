@@ -12,7 +12,7 @@ const toggleLocales = () => {
 
 <template>
   <nav class="flex items-center justify-center text-xl">
-    <button class="icon-btn" @click="toggleDark()">
+    <button class="icon-btn" aria-label="dark-mode" @click="toggleDark()">
       <div i="fa-solid-sun dark:fa-solid-moon" />
     </button>
 
