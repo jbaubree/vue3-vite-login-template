@@ -33,10 +33,17 @@ export default defineConfig({
       ],
       dts: 'src/auto-imports.d.ts',
       resolvers: [
-        dirResolver(),
         dirResolver({
-          target: 'stores',
+          normalize({ name }) {
+            return `~/composables/${name}`
+          },
+        }),
+        dirResolver({
+          target: 'src/stores',
           suffix: 'Store',
+          normalize({ name }) {
+            return `~/stores/${name}`
+          },
         }),
       ],
     }),

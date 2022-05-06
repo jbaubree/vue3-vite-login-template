@@ -22,7 +22,7 @@ specifiers:
   unplugin-auto-import: 0.7.1
   unplugin-vue-components: 0.19.3
   vite: 2.9.7
-  vite-auto-import-resolvers: 2.3.0
+  vite-auto-import-resolvers: ^3.0.0
   vite-plugin-pages: 0.23.0
   vite-plugin-pwa: 0.12.0
   vite-plugin-vue-layouts: 0.6.0
@@ -60,7 +60,7 @@ devDependencies:
   unplugin-auto-import: 0.7.1_6qfftb5sbvokbj5gkjcfwcaoo4
   unplugin-vue-components: 0.19.3_vite@2.9.7+vue@3.2.33
   vite: 2.9.7_sass@1.51.0
-  vite-auto-import-resolvers: 2.3.0_577c66tz53nvecvxpazhq5otnm
+  vite-auto-import-resolvers: 3.0.0_577c66tz53nvecvxpazhq5otnm
   vite-plugin-pages: 0.23.0_vite@2.9.7
   vite-plugin-pwa: 0.12.0_vite@2.9.7
   vite-plugin-vue-layouts: 0.6.0_cy27blvoe2cwdzwso5wue736a4
@@ -5646,8 +5646,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-auto-import-resolvers/2.3.0_577c66tz53nvecvxpazhq5otnm:
-    resolution: {integrity: sha512-2/DloHsurAmli/+yzaN3qjwX3f6jnUs1pmBhk2ChFWWuo5haiuNrGZLIG0U3xNPy4610bY6YLWl7pA+dWGWg6Q==}
+  /vite-auto-import-resolvers/3.0.0_577c66tz53nvecvxpazhq5otnm:
+    resolution: {integrity: sha512-1rxVh+uyJ/eCFCsDauMEpU/GcxsXQp54EeHZdbs+xXcyXr8dMwJdkCzDaUml0emXum7Ub/okEQkXRB2csyW1eg==}
     engines: {node: '>=16'}
     peerDependencies:
       '@types/node': '>=17.0.23'
