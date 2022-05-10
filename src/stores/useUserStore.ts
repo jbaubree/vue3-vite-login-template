@@ -12,7 +12,7 @@ const useUserStore = defineStore('user', {
   },
   actions: {
     async login(credentials: UserCredentials) {
-      const { data, isPending, error } = useRequest('/auth/login', credentials, 'POST', { immediate: true })
+      const { data, isPending, error } = useRequest('/auth/login', { data: credentials, method: 'POST' }, { immediate: true })
 
       watch(isPending, (value) => {
         if (!value && !error) {
