@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { toggleDark } = useDarkMode()
 const { availableLocales, locale } = useI18n()
 
 const toggleLocales = () => {
