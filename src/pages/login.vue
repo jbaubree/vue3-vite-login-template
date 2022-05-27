@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { t } = useI18n()
 const { isConnected, error } = useUser()
 const router = useRouter()
 const userStore = useUserStore()
@@ -16,19 +15,19 @@ watch(isConnected, (value) => {
 <template>
   <div class="flex flex-col items-center gap-5 my-auto">
     <p>
-      <em class="text-sm opacity-75">{{ t('words.login') }}</em>
+      <em class="text-sm opacity-75">{{ $t('words.login') }}</em>
     </p>
 
     <input
       v-model="username"
       class="input"
-      :placeholder="t('words.username')"
+      :placeholder="$t('words.username')"
       type="text"
     >
     <input
       v-model="password"
       class="input"
-      :placeholder="t('words.password')"
+      :placeholder="$t('words.password')"
       type="password"
     >
 
@@ -36,7 +35,7 @@ watch(isConnected, (value) => {
       class="btn text-sm"
       @click="userStore.login({ username, password })"
     >
-      {{ t('actions.sign-in') }}
+      {{ $t('actions.sign-in') }}
     </button>
     <span v-if="error">{{ error }}</span>
   </div>

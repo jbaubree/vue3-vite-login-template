@@ -15,6 +15,7 @@ export const install: UserModule = ({ app }) => {
     legacy: false,
     locale: 'en',
     messages,
+    globalInjection: true,
   })
 
   app.use(i18n)

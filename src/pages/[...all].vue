@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const { t } = useI18n()
 </script>
 
 <template>
   <div>
-    {{ t('sentences.not-found') }}
+    {{ $t('sentences.not-found') }}
   </div>
 </template>
 
