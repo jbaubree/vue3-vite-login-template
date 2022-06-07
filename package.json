@@ -51,7 +51,7 @@
     "commit-msg": "npx --no -- commitlint --edit $1"
   },
   "lint-staged": {
-    "*.{ts,vue}": [
+    "*.{ts,vue,js}": [
       "eslint --fix"
     ]
   },
