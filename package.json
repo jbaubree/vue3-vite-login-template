@@ -16,7 +16,7 @@
     "pinia": "^2.0.14",
     "vue": "^3.2.37",
     "vue-i18n": "^9.1.10",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.16"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.1",
@@ -29,22 +29,22 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "axios": "^0.27.2",
     "eslint": "^8.17.0",
-    "lint-staged": "^13.0.0",
+    "lint-staged": "^13.0.1",
     "lodash": "^4.17.21",
-    "pnpm": "^7.1.9",
-    "sass": "^1.52.2",
+    "pnpm": "^7.2.1",
+    "sass": "^1.52.3",
     "simple-git-hooks": "^2.8.0",
     "typescript": "^4.7.3",
-    "unocss": "^0.38.1",
-    "unplugin-auto-import": "^0.8.7",
+    "unocss": "^0.39.0",
+    "unplugin-auto-import": "^0.8.8",
     "unplugin-vue-components": "^0.19.6",
-    "vite": "^2.9.10",
-    "vite-plugin-pages": "^0.23.0",
+    "vite": "^2.9.12",
+    "vite-plugin-pages": "^0.24.1",
     "vite-plugin-pwa": "^0.12.0",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-ssg": "^0.20.1",
     "vite-ssg-sitemap": "^0.2.7",
-    "vue-tsc": "^0.37.3"
+    "vue-tsc": "^0.37.8"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
