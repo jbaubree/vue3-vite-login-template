@@ -13,8 +13,8 @@ const toggleLocales = () => {
       <div i="fa-solid-sun dark:fa-solid-moon" />
     </button>
 
-    <a class="icon-btn" @click="toggleLocales">
+    <div class="icon-btn" @click="toggleLocales">
       {{ locale.toUpperCase() }}
-    </a>
+    </div>
   </nav>
 </template>
