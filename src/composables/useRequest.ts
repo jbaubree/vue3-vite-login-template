@@ -12,13 +12,13 @@ const USE_AXIOS_OPTIONS: UseAxiosOptions = {
 
 function request(url: string, options: AxiosRequestConfig = {}, useAxiosOptions: UseAxiosOptions) {
   options = _.omitBy(Object.assign({}, API_CONFIG, options), _.isNil)
-  const { data, error, isLoading, canceled: isCancelled, abort, execute } = useAxios(url, options, useAxiosOptions)
+  const { data, error, isLoading, isCanceled, abort, execute } = useAxios(url, options, useAxiosOptions)
 
   return {
     data: readonly(data),
     error: readonly(error),
     isPending: readonly(isLoading),
-    isCancelled: readonly(isCancelled),
+    isCancelled: readonly(isCanceled),
     execute,
     abort,
   }
