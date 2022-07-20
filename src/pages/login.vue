@@ -17,19 +17,22 @@ watch(isConnected, (value) => {
     <p>
       <em class="text-sm opacity-75">{{ $t('words.login') }}</em>
     </p>
-
-    <input
-      v-model="username"
-      class="input"
-      :placeholder="$t('words.username')"
-      type="text"
-    >
-    <input
-      v-model="password"
-      class="input"
-      :placeholder="$t('words.password')"
-      type="password"
-    >
+    <form>
+      <input
+        v-model="username"
+        autocomplete="username"
+        class="input"
+        :placeholder="$t('words.username')"
+        type="text"
+      >
+      <input
+        v-model="password"
+        autocomplete="current-password"
+        class="input"
+        :placeholder="$t('words.password')"
+        type="password"
+      >
+    </form>
 
     <button
       class="btn text-sm"

@@ -7,7 +7,7 @@ Vue3 Vite Simple Login Starter Template based on <b>Vitesse</b><sup><em>(by @ant
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 🗂 [File based routing](./src/pages)
 
@@ -72,7 +72,7 @@ Vue3 Vite Simple Login Starter Template based on <b>Vitesse</b><sup><em>(by @ant
 
 ## Try it now!
 
-> This template requires Node >=14
+> This template requires Node >=14.18
 
 ## Checklist
 
