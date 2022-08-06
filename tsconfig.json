@@ -15,6 +15,7 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
+      "node",
       "vite/client",
       "vue/ref-macros",
       "vite-plugin-pages/client",
@@ -24,5 +25,5 @@
       "~/*": ["src/*"]
     }
   },
-  "exclude": ["dist", "node_modules", "commitlint.config.js"]
+  "exclude": ["dist", "node_modules"]
 }
