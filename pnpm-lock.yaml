@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
   '@iconify-json/fa-solid': ^1.1.2
-  '@intlify/vite-plugin-vue-i18n': ^5.0.1
+  '@intlify/vite-plugin-vue-i18n': ^6.0.0
   '@types/lodash': ^4.14.182
   '@types/node': ^18.6.4
   '@types/nprogress': ^0.2.0
@@ -19,7 +19,7 @@ specifiers:
   lodash: ^4.17.21
   nprogress: ^0.2.0
   pinia: ^2.0.17
-  pnpm: ^7.8.0
+  pnpm: ^7.9.0
   sass: ^1.54.3
   simple-git-hooks: ^2.8.0
   taze: ^0.7.6
@@ -53,7 +53,7 @@ devDependencies:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@iconify-json/fa-solid': 1.1.2
-  '@intlify/vite-plugin-vue-i18n': 5.0.1_vite@3.0.4+vue-i18n@9.2.2
+  '@intlify/vite-plugin-vue-i18n': 6.0.0_vite@3.0.4+vue-i18n@9.2.2
   '@types/lodash': 4.14.182
   '@types/node': 18.6.4
   '@types/nprogress': 0.2.0
@@ -62,7 +62,7 @@ devDependencies:
   eslint: 8.21.0
   lint-staged: 13.0.3
   lodash: 4.17.21
-  pnpm: 7.8.0
+  pnpm: 7.9.0
   sass: 1.54.3
   simple-git-hooks: 2.8.0
   taze: 0.7.6
@@ -1633,8 +1633,8 @@ packages:
     resolution: {integrity: sha512-wRwTpsslgZS5HNyM7uDQYZtxnbI12aGiBZURX3BTR9RFIKKRWpllTsgzHWvj3HKm3Y2Sh5LPC1r0PDCKEhVn9Q==}
     engines: {node: '>= 14'}
 
-  /@intlify/vite-plugin-vue-i18n/5.0.1_vite@3.0.4+vue-i18n@9.2.2:
-    resolution: {integrity: sha512-+LAUdm5PxGtLrUYgD2Wg9SINmLmhZqrcTnzccfqopca5NvaXWOPnQR4cQOkn82qLuyjWdCYC1BoqMHWBWX/MyQ==}
+  /@intlify/vite-plugin-vue-i18n/6.0.0_vite@3.0.4+vue-i18n@9.2.2:
+    resolution: {integrity: sha512-9hvd846YWACtSr6akOR57utxSP2205XJqVfidiQVZLTkHTVHjDhPiRg1ShdZBT909fzW2+71e2tgG4lRi4r87Q==}
     engines: {node: '>= 14.6'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -6135,8 +6135,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.8.0:
-    resolution: {integrity: sha512-jzb9/gto4nwuVA2itTRk0PJhuaZcA1NBRB298UzXhqKZQMjtHCS+KLzh7RWk5n3g+KnMg5FHr6Mwg1L62dBz1A==}
+  /pnpm/7.9.0:
+    resolution: {integrity: sha512-xkIVw73yJm/h5M4VvFIS5Q+gQCRDrp3r92g58PtcCK86aZCa7EQ6q6ivdfTAz0KsAVgloA6Anub28n6wju5v3w==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
@@ -6907,7 +6907,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      acorn: 8.7.1
+      acorn: 8.8.0
       commander: 2.20.3
       source-map: 0.8.0-beta.0
       source-map-support: 0.5.21
