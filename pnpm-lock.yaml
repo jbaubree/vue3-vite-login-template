@@ -32,7 +32,7 @@ specifiers:
   vite-plugin-pwa: ^0.12.3
   vite-plugin-vue-layouts: ^0.7.0
   vite-ssg: ^0.20.2
-  vite-ssg-sitemap: ^0.3.1
+  vite-ssg-sitemap: ^0.3.2
   vue: ^3.2.37
   vue-i18n: ^9.2.2
   vue-router: ^4.1.3
@@ -75,7 +75,7 @@ devDependencies:
   vite-plugin-pwa: 0.12.3_vite@3.0.4
   vite-plugin-vue-layouts: 0.7.0_2idawcohe3eegwclkuflddhqau
   vite-ssg: 0.20.2_fp5hl3q4gkghozyxjphjimguwm
-  vite-ssg-sitemap: 0.3.1
+  vite-ssg-sitemap: 0.3.2
   vue-tsc: 0.39.5_typescript@4.7.4
 
 packages:
@@ -3075,8 +3075,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -6995,7 +6995,7 @@ packages:
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
       '@types/node': 18.6.4
-      acorn: 8.7.1
+      acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
       create-require: 1.1.1
@@ -7420,8 +7420,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-ssg-sitemap/0.3.1:
-    resolution: {integrity: sha512-I/urEKBAF62r4b3jL4Usa3kpo/WQl4gC/SqQz2APHh+2ZLMbO0xstULfkVHIaRW6416vtfz2SlvysdvW+u1xkQ==}
+  /vite-ssg-sitemap/0.3.2:
+    resolution: {integrity: sha512-udsHc11VYQLSy/Zy6efKHnU/ABozGUz84Z9GqmrD8MaB2HCezqFVFAJukwZaxBzcEjy1jFXfNCIcT8J6LefpWw==}
     dev: true
 
   /vite-ssg/0.20.2_fp5hl3q4gkghozyxjphjimguwm:
