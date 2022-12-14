@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/cli': ^17.3.0
   '@commitlint/config-conventional': ^17.3.0
   '@iconify-json/fa-solid': ^1.1.3
-  '@intlify/vite-plugin-vue-i18n': ^6.0.0
+  '@intlify/vite-plugin-vue-i18n': ^6.0.3
   '@types/lodash': ^4.14.191
   '@types/node': ^18.11.15
   '@types/nprogress': ^0.2.0
@@ -53,7 +53,7 @@ devDependencies:
   '@commitlint/cli': 17.3.0
   '@commitlint/config-conventional': 17.3.0
   '@iconify-json/fa-solid': 1.1.3
-  '@intlify/vite-plugin-vue-i18n': 6.0.0_vite@4.0.1+vue-i18n@9.2.2
+  '@intlify/vite-plugin-vue-i18n': 6.0.3_vite@4.0.1+vue-i18n@9.2.2
   '@types/lodash': 4.14.191
   '@types/node': 18.11.15
   '@types/nprogress': 0.2.0
@@ -1851,8 +1851,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /@intlify/vite-plugin-vue-i18n/6.0.0_vite@4.0.1+vue-i18n@9.2.2:
-    resolution: {integrity: sha512-9hvd846YWACtSr6akOR57utxSP2205XJqVfidiQVZLTkHTVHjDhPiRg1ShdZBT909fzW2+71e2tgG4lRi4r87Q==}
+  /@intlify/vite-plugin-vue-i18n/6.0.3_vite@4.0.1+vue-i18n@9.2.2:
+    resolution: {integrity: sha512-6SgNzPAOCR90wvt368lKzi7f/5ZEWJn22UCGvhFsP3XvKqlF3cVzojahgQ6o+LTdCkExeM6wPgd+haFf28E9VQ==}
     engines: {node: '>= 14.6'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -1870,7 +1870,7 @@ packages:
       '@intlify/shared': 9.3.0-beta.10
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       source-map: 0.6.1
       vite: 4.0.1_o2iixvyklpce477lkpnahelma4
       vue-i18n: 9.2.2_vue@3.2.45
