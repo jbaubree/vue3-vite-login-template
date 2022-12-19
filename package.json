@@ -32,6 +32,7 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "axios": "^1.2.1",
     "eslint": "^8.30.0",
+    "jwt-decode": "3.1.2",
     "lint-staged": "^13.1.0",
     "lodash": "^4.17.21",
     "pnpm": "^7.18.2",

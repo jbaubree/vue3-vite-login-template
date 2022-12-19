@@ -1,13 +1,12 @@
 <script setup lang="ts">
-const { isConnected, error } = useUser()
 const router = useRouter()
 const userStore = useUserStore()
 
 const username = ref('')
 const password = ref('')
 
-watch(isConnected, (value) => {
-  if (value)
+userStore.$subscribe(() => {
+  if (userStore.isAuthenticated)
     router.push({ name: 'index' })
 })
 </script>
@@ -40,6 +39,6 @@ watch(isConnected, (value) => {
     >
       {{ $t('actions.sign-in') }}
     </button>
-    <span v-if="error">{{ error }}</span>
+    <span v-if="userStore.error">{{ userStore.error }}</span>
   </div>
 </template>

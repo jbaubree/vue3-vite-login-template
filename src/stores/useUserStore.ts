@@ -1,5 +1,6 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import type { User, UserCredentials } from '~/types'
+import jwt_decode from 'jwt-decode'
+import type { DecodedUserFromToken, User, UserCredentials } from '~/types'
 
 const useUserStore = defineStore('user', {
   state: () => ({
@@ -7,8 +8,11 @@ const useUserStore = defineStore('user', {
     error: undefined as unknown,
   }),
   getters: {
-    getUser: state => state.user,
-    getError: state => state.error,
+    isAuthenticated: (state) => {
+      if (!state.user?.token)
+        return false
+      return (jwt_decode(state.user.token) as DecodedUserFromToken).exp > Math.floor(Date.now() / 1000)
+    },
   },
   actions: {
     async login(credentials: UserCredentials) {

@@ -4,12 +4,12 @@ export const install: UserModule = ({ isClient, router }) => {
   if (!isClient)
     return
 
-  const { isConnected } = useUser()
+  const userStore = useUserStore()
 
   router.beforeEach((to) => {
-    if (to.name === 'login' && isConnected.value)
+    if (to.name === 'login' && userStore.isAuthenticated)
       router.push({ name: 'index' })
-    if ((to.name !== 'login' && to.name !== 'all') && !isConnected.value)
+    if ((to.name !== 'login' && to.name !== 'all') && !userStore.isAuthenticated)
       router.push({ name: 'login' })
   })
 }
