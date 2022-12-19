@@ -12,7 +12,6 @@ export interface DecodedUserFromToken extends User {
   aud: string
   exp: EpochTimeStamp
   iat: EpochTimeStamp
-  id: string
   iss: string
   nbf: EpochTimeStamp
 }
