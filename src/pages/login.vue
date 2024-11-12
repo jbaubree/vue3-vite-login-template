@@ -12,7 +12,7 @@ userStore.$subscribe(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center gap-5 my-auto">
+  <div class="my-auto flex flex-col items-center gap-5">
     <p>
       <em class="text-sm opacity-75">{{ $t('words.login') }}</em>
     </p>
@@ -34,7 +34,7 @@ userStore.$subscribe(() => {
     </form>
 
     <button
-      class="btn text-sm"
+      class="text-sm btn"
       @click="userStore.login({ username, password })"
     >
       {{ $t('actions.sign-in') }}

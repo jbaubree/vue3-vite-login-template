@@ -1,4 +1,3 @@
-
 <p align='center'>
 Vue3 Vite Simple Login Starter Template based on <b>Vitesse</b><sup><em>(by @antfu)</em></sup>
 </p>

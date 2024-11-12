@@ -1,14 +1,14 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import generateSitemap from 'vite-ssg-sitemap'
-import Layouts from 'vite-plugin-vue-layouts'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import { VitePWA } from 'vite-plugin-pwa'
+import { resolve } from 'node:path'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import Vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vite'
+import Pages from 'vite-plugin-pages'
+import { VitePWA } from 'vite-plugin-pwa'
+import Layouts from 'vite-plugin-vue-layouts'
+import generateSitemap from 'vite-ssg-sitemap'
 
 export default defineConfig({
   resolve: {
@@ -17,7 +17,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    Vue({ reactivityTransform: true }),
+    Vue(),
     Pages(),
     Layouts(),
     AutoImport({
@@ -25,7 +25,6 @@ export default defineConfig({
         'vue',
         'vue-router',
         'vue-i18n',
-        'vue/macros',
         '@vueuse/core',
         '@vueuse/head',
       ],

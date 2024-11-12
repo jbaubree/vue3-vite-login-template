@@ -1,5 +1,5 @@
-import { type UseAxiosOptions, useAxios } from '@vueuse/integrations/useAxios'
 import type { AxiosRequestConfig } from 'axios'
+import { useAxios, type UseAxiosOptions } from '@vueuse/integrations/useAxios'
 import _ from 'lodash'
 
 const API_CONFIG: AxiosRequestConfig = {

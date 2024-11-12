@@ -1,5 +1,5 @@
+import { jwtDecode } from 'jwt-decode'
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import jwt_decode from 'jwt-decode'
 import type { DecodedUserFromToken, User, UserCredentials } from '~/types'
 
 const useUserStore = defineStore('user', {
@@ -11,7 +11,7 @@ const useUserStore = defineStore('user', {
     isAuthenticated: (state) => {
       if (!state.user?.token)
         return false
-      return (jwt_decode(state.user.token) as DecodedUserFromToken).exp > Math.floor(Date.now() / 1000)
+      return (jwtDecode(state.user.token) as DecodedUserFromToken).exp > Math.floor(Date.now() / 1000)
     },
   },
   actions: {

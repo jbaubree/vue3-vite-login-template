@@ -3,9 +3,9 @@ const userStore = useUserStore()
 </script>
 
 <template>
-  <div flex flex-col items-center gap-5 my-auto>
-    {{ $t('sentences.connected-user:') }} <pre class="text-left mb-8">{{ userStore.user }}</pre>
-    <button class="btn text-sm" @click="userStore.logout">
+  <div my-auto flex flex-col items-center gap-5>
+    {{ $t('sentences.connected-user:') }} <pre class="mb-8 text-left">{{ userStore.user }}</pre>
+    <button class="text-sm btn" @click="userStore.logout">
       {{ $t('actions.logout') }}
     </button>
   </div>

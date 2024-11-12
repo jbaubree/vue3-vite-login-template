@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { availableLocales, locale } = useI18n()
 
-const toggleLocales = () => {
+function toggleLocales() {
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
 }

@@ -1,30 +1,31 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "target": "ESNext",
+    "jsx": "preserve",
+    "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "jsx": "preserve",
-    "skipLibCheck": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
     "types": [
       "node",
       "vite/client",
-      "vue/ref-macros",
       "vite-plugin-pwa/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ],
-    "paths": {
-      "~/*": ["src/*"]
-    }
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
-  "exclude": ["dist", "node_modules", "commitlint.config.cjs"]
+  "exclude": ["dist", "node_modules", "commitlint.config.cjs", "eslint.config.js"]
 }

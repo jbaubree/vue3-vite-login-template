@@ -1,9 +1,9 @@
-import { ViteSSG } from 'vite-ssg'
+import generatedRoutes from '~pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 
-import type { UserModule } from '~/types'
+import { ViteSSG } from 'vite-ssg'
 import App from '~/App.vue'
-import generatedRoutes from '~pages'
+import type { UserModule } from '~/types'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.scss'
